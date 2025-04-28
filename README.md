@@ -22,14 +22,13 @@ Perfect for learning how to work with real-world APIs, responsive layouts, dynam
 ## 📂 Project Setup
 
 No backend server required — it's a pure HTML/CSS/JS frontend project.
-
-1. Clone the repository:
+1. Install git
+2. Open a folder in VS code in which the project is to be cloned. 
+3. Clone the repository in your folder by pasting this command in your terminal:
   ```sh
   git clone https://github.com/Harsh-R-Singh/space_launch_tracker.git
-  cd space_launch_tracker
   ```
-
-2. Open index.html in your browser:
+4. Open index.html in your browser:
 
     - Simply double-click index.html Or use a local server like Live Server extension in VSCode for better experience.
 
