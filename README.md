@@ -25,8 +25,8 @@ No backend server required — it's a pure HTML/CSS/JS frontend project.
 
 1. Clone the repository:
   ```sh
-  git clone https://github.com/your-username/your-repo-name.git
-  cd your-repo-name
+  git clone https://github.com/Harsh-R-Singh/space_launch_tracker.git
+  cd space_launch_tracker
   ```
 
 2. Open index.html in your browser:
