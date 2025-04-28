@@ -1,0 +1,281 @@
+/* ========== Global Styles ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: url('https://images.unsplash.com/photo-1541185934-01b600ea069c?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+  background-size: cover;
+  background-attachment: fixed;
+ /* for navbar space */
+  color: #ffffff;
+}
+section h2,section button{
+  margin-top:10px;
+  margin-left:30px;
+}
+/* From Uiverse.io by JaydipPrajapati1910 */ 
+#refreshBtn {
+  color: white;
+  background-color: #222;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  line-height: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  cursor: pointer;
+  text-align: center;
+
+  display: inline-flex;
+  align-items: center;
+  border: none;
+}
+
+#refreshBtn:hover {
+  background-color: #333;
+}
+
+#refreshBtn svg {
+  display: inline;
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-right: 0.75rem;
+  color: white;
+}
+
+#refreshBtn:focus svg {
+  animation: spin_357 0.5s linear;
+}
+
+@keyframes spin_357 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ========== Navbar ========== */
+nav {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+nav div{
+  width: 100%;
+}
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4fc3f7;
+}
+
+nav ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #4fc3f7;
+}
+
+/* ========== Content#launchesDiv ========== */
+#launchesDiv {
+
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+#locationsDiv {
+
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+#spacecraftsDiv {
+
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* ========== Cards ========== */
+.launch-card,
+.location-card,
+.spacecraft-card {
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.launch-card:hover,
+.location-card:hover,
+.spacecraft-card:hover {
+  transform: translateY(-5px);
+  background: rgba(0, 0, 0, 0.2);
+}
+/* ========== location Images ========== */
+/* Location Card Grid Layout */
+/* Outer grid to arrange cards */
+#locations-container { /* (the parent div where cards are appended) */
+  display: grid;
+  grid-template-columns: repeat(1fr, 2fr); /* 2 cards per row */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Inside each card */
+.location-card {
+
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Arrange image and text inside one card */
+.location-inner-grid {
+  display: grid;
+  grid-template-columns: 1fr ; /* Image left, Text right */
+  align-items: center;
+}
+
+/* Image style */
+.location-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Content style */
+.location-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.location-content h3 {
+  margin: 0;
+}
+
+.location-content p {
+  font-size: 14px;
+}
+
+/* Responsive: On mobile only 1 card per line */
+@media (max-width: 768px) {
+  #locations-container {
+    grid-template-columns: 1fr;
+  }
+}
+.side{
+  display: flex;
+  justify-content: left;
+}
+/* ========== Images ========== */
+.spacecraft-image,
+.launch-image {
+  width: 80%;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* ========== Countdown Timer ========== */
+.countdown {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #ffeb3b;
+}
+
+/* ========== Buttons ========== */
+.details-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #4fc3f7;
+  color: #000;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.details-button:hover {
+  background: #0288d1;
+  color: #fff;
+}
+
+/* ========== Spinner Animation ========== */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #4fc3f7;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 50px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* ========== Responsive Fixes ========== */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  #launchesDiv {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  #locationsDiv {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  #spacecraftsDiv {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}
