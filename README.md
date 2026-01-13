@@ -1,50 +1,16 @@
-# Space_launch_tracker
-## Overview
-Space Launch Tracker is a lightweight and fully responsive web app that displays upcoming rocket launches, spacecrafts, and launch locations using real-time data from the SpaceDevs Launch Library 2 API.
+# React + Vite
 
-Built with pure HTML, CSS, and JavaScript, this project is designed to help you explore future space missions, launch sites across the globe, and information about spacecrafts — all in a sleek, user-friendly interface.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Perfect for learning how to work with real-world APIs, responsive layouts, dynamic DOM manipulation, and live countdown timers!
+Currently, two official plugins are available:
 
-## ✨Features
-- Live countdown to upcoming rocket launches.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-- Information about launch locations with images.
+## React Compiler
 
-- Spacecraft details including type, agency, and time spent in space.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-- Responsive and mobile-friendly design.
+## Expanding the ESLint configuration
 
-- Simple navigation between Launches, Locations, and Spacecraft pages.
-
-- No build setup needed — pure frontend project.
-
-## 📂 Project Setup
-
-No backend server required — it's a pure HTML/CSS/JS frontend project.
-1. Install git
-2. Open a folder in VS code in which the project is to be cloned. 
-3. Clone the repository in your folder by pasting this command in your terminal:
-  ```sh
-  git clone https://github.com/Harsh-R-Singh/space_launch_tracker.git
-  ```
-4. Open index.html in your browser:
-
-    - Simply double-click index.html Or use a local server like Live Server extension in VSCode for better experience.
-
-## 🔗 APIs Used
-We are using Launch Library 2 API by The Space Devs:
-
-
-API |	URL	| Purpose
-----|-----|--------
-Upcoming Launches | https://ll.thespacedevs.com/2.2.0/launch/upcoming/?limit=10	| Fetch upcoming rocket launches
-Launch Locations | https://ll.thespacedevs.com/2.2.0/location/?limit=10	| Fetch launch site locations
-Spacecrafts | https://ll.thespacedevs.com/2.2.0/spacecraft/?limit=10 | Fetch spacecraft details
-
-Note: These APIs are public but have rate limits. If you send too many requests quickly, you might see a 429 Too Many Requests error.
-
-## 📸 Screenshots
-- ![Upcoming_launch_page](https://github.com/user-attachments/assets/113cb39e-58b2-4c16-937e-2c1b28102b01)
-- ![Spacecrafts_page](https://github.com/user-attachments/assets/b51c4c59-842a-4554-b7dd-5927e3bd6405)
-- ![Location_page](https://github.com/user-attachments/assets/e7f12cab-4f93-4081-ae97-f5afc1801a11)
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
